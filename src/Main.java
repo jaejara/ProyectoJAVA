@@ -1,13 +1,29 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+public class Main {
+    public static void main(String[] args) {
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingrese nombre: ");
+        String nombre = scanner.nextLine();
+
+        System.out.println("Ingrese carrera: ");
+        String carrera = scanner.nextLine();
+
+        System.out.println("Ingrese edad: ");
+        int edad = scanner.nextInt();
+
+        Estudiante estudiante = new Estudiante(nombre, carrera, edad);
+
+        if (edad < 18) {
+            System.out.println("Estudiante menor de edad.");
+        } else if (edad <25) {
+            System.out.println("Estudiante joven.");
+        } else {
+            System.out.println("Estudiante adulto.");
+        }
+
+        estudiante.mostrarInformacion();
+
     }
 }
+
