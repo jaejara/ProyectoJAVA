@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
@@ -23,6 +24,10 @@ public class Main {
         }
 
         estudiante.mostrarInformacion();
+
+        for (int i= 1; i <= 5; i++) {
+            System.out.println("Procesando estudiante " + i);
+        }
 
     }
 }
