@@ -29,6 +29,24 @@ public class Main {
             System.out.println("Procesando estudiante " + i);
         }
 
+        int opcion = -1;
+        while (opcion !=0){
+
+
+        System.out.println("==Sistema de DUOC UC==");
+        System.out.println("1.- Mostrar estado");
+        System.out.println("2.- Procesar la operación");
+        System.out.println("0.- Salir");
+        System.out.println("Seleccione una opción: ");
+        opcion = scanner.nextInt();
+}
+    if (opcion == 1) {
+        System.out.println("Sistema operativo.");
+    } else if (opcion == 2) {
+        System.out.println("Procesando operación...");
+    } else if (opcion == 0) {
+        System.out.println("Cerrando sistema...");
     }
+}
 }
 
